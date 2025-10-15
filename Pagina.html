@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Zigi — Mueve tu mundo</title>
+  <meta name="description" content="Zigi: app que facilita movilidad, compras y servicios. Descarga, ahorra y disfruta de promociones exclusivas.">
+  <meta name="theme-color" content="#0ea5a4">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial}</style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "Zigi",
+    "operatingSystem": "ANDROID, iOS",
+    "applicationCategory": "BusinessApplication",
+    "description": "Zigi: app que facilita movilidad, compras y servicios con promociones y sistema de referidos.",
+    "url": "https://tusitio.com",
+    "image": "https://tusitio.com/asset/hero-screenshot.png"
+  }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="bg-white shadow-sm">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-teal-400 to-emerald-500 flex items-center justify-center text-white font-bold">Z</div>
+        <div>
+          <a href="#" class="text-lg font-semibold">Zigi</a>
+          <p class="text-xs text-gray-500">Mueve tu mundo</p>
+        </div>
+      </div>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#features" class="hover:underline">Beneficios</a>
+        <a href="#how" class="hover:underline">Cómo funciona</a>
+        <a href="#referidos" class="hover:underline">Referidos</a>
+        <a href="#contact" class="hover:underline">Contacto</a>
+        <a href="#download" class="bg-teal-500 text-white px-4 py-2 rounded-lg shadow">Descargar</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main class="max-w-6xl mx-auto px-6 py-12">
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Zigi — La app que trae todo a tu alcance</h1>
+        <p class="mt-4 text-lg text-gray-600">Viajes, compras y servicios en una sola app. Rápido, seguro y con promociones exclusivas para usuarios nuevos y referidos.</p>
+
+        <div class="mt-6 flex flex-col sm:flex-row gap-3">
+          <a id="ctaDownload" href="#download" class="inline-flex items-center gap-3 bg-teal-500 text-white px-5 py-3 rounded-lg shadow hover:opacity-95">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M3 3a1 1 0 00-1 1v12a1 1 0 001 1h14a1 1 0 001-1V7.414A2 2 0 0016.586 6L12 1.414A2 2 0 0010.586 1H3z"/></svg>
+            Descargar Zigi
+          </a>
+          <a href="#features" class="inline-flex items-center gap-2 border border-gray-200 px-5 py-3 rounded-lg">Ver características</a>
+        </div>
+
+        <div class="mt-6 text-sm text-gray-500">Oferta de lanzamiento: <strong>Q15</strong> de crédito al registrarte con el código <span class="bg-gray-100 px-2 py-1 rounded">ZIGINEW</span> (válido 30 días).</div>
+
+        <!-- Quick trust row -->
+        <div class="mt-8 grid grid-cols-3 sm:grid-cols-6 gap-4 text-center text-xs text-gray-500">
+          <div><strong class="text-xl text-gray-800">4.8</strong><div>App rating</div></div>
+          <div><strong class="text-xl text-gray-800">+10k</strong><div>Descargas</div></div>
+          <div><strong class="text-xl text-gray-800">24/7</strong><div>Soporte</div></div>
+          <div class="hidden sm:block"><strong class="text-xl text-gray-800">Pagos</strong><div>Tarjeta/QR</div></div>
+          <div class="hidden sm:block"><strong class="text-xl text-gray-800">Seguridad</strong><div>Verificado</div></div>
+          <div class="hidden sm:block"><strong class="text-xl text-gray-800">Rápido</strong><div>Promed. 8 min</div></div>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-center">
+        <!-- Phone mockup -->
+        <div class="w-80 h-160 sm:w-96 sm:h-[520px] relative">
+          <img src="https://via.placeholder.com/360x720.png?text=Mockup+Zigi" alt="Zigi screenshot" class="rounded-2xl shadow-lg">
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="mt-12 bg-white rounded-xl p-8 shadow">
+      <h2 class="text-2xl font-semibold">Qué puedes hacer con Zigi</h2>
+      <p class="text-gray-600 mt-2">Todo lo que necesitas en una sola aplicación — pensado para tu ciudad.</p>
+
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-5 border rounded-lg">
+          <h3 class="font-semibold">Movilidad inteligente</h3>
+          <p class="mt-2 text-sm text-gray-600">Solicita viajes seguros y económicos con seguimiento en tiempo real.</p>
+        </div>
+        <div class="p-5 border rounded-lg">
+          <h3 class="font-semibold">Compras y delivery</h3>
+          <p class="mt-2 text-sm text-gray-600">Recibe compras y comida a domicilio en menos de 45 minutos.</p>
+        </div>
+        <div class="p-5 border rounded-lg">
+          <h3 class="font-semibold">Pagos y promociones</h3>
+          <p class="mt-2 text-sm text-gray-600">Paga con tarjeta o saldo, obtén descuentos por referidos y promociones locales.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section id="how" class="mt-8">
+      <h2 class="text-2xl font-semibold">Cómo funciona</h2>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-5 rounded-lg shadow-sm">
+          <div class="text-teal-500 font-bold">1</div>
+          <h4 class="font-semibold mt-2">Descarga la app</h4>
+          <p class="text-sm text-gray-600 mt-1">Disponible en Google Play y App Store.</p>
+        </div>
+        <div class="bg-white p-5 rounded-lg shadow-sm">
+          <div class="text-teal-500 font-bold">2</div>
+          <h4 class="font-semibold mt-2">Regístrate</h4>
+          <p class="text-sm text-gray-600 mt-1">Ingresa tus datos, verifica tu número y agrega método de pago.</p>
+        </div>
+        <div class="bg-white p-5 rounded-lg shadow-sm">
+          <div class="text-teal-500 font-bold">3</div>
+          <h4 class="font-semibold mt-2">Usa y gana</h4>
+          <p class="text-sm text-gray-600 mt-1">Viaja, compra o recibe servicios — y gana créditos con referidos.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to action / Download -->
+    <section id="download" class="mt-10 bg-gradient-to-r from-teal-50 to-white p-8 rounded-xl flex flex-col md:flex-row items-center justify-between gap-6">
+      <div>
+        <h3 class="text-xl font-semibold">Listo para probar Zigi?</h3>
+        <p class="text-gray-600 mt-2">Descarga ahora y recibe Q15 de crédito en tu primera orden con el código promocional.</p>
+        <div class="mt-4 flex gap-3">
+          <a href="#" class="inline-flex items-center gap-3 bg-black text-white px-4 py-3 rounded-lg shadow">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" class="h-6"> 
+          </a>
+          <a href="#" class="inline-flex items-center gap-3 bg-black text-white px-4 py-3 rounded-lg shadow">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/App_Store_%28iOS%29.svg" alt="App Store" class="h-6">
+          </a>
+        </div>
+      </div>
+      <div class="p-4 bg-white rounded-lg shadow">
+        <h4 class="font-semibold">Regístrate y recibe crédito</h4>
+        <form id="leadForm" class="mt-3 flex flex-col gap-3 w-64">
+          <input required type="text" id="name" placeholder="Nombre completo" class="px-3 py-2 border rounded" />
+          <input required type="email" id="email" placeholder="Correo electrónico" class="px-3 py-2 border rounded" />
+          <input required type="tel" id="phone" placeholder="Teléfono" class="px-3 py-2 border rounded" />
+          <button type="submit" class="bg-teal-500 text-white px-4 py-2 rounded">Enviar y recibir código</button>
+        </form>
+        <div id="leadMsg" class="mt-2 text-sm text-green-600 hidden">¡Listo! Te enviamos el código al correo.</div>
+      </div>
+    </section>
+
+    <!-- Referidos -->
+    <section id="referidos" class="mt-10 bg-white rounded-xl p-8 shadow">
+      <h2 class="text-2xl font-semibold">Programa de referidos</h2>
+      <p class="text-gray-600 mt-2">Invita amigos y ambos ganan créditos. Fácil de compartir con código o link.</p>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="p-4 border rounded">
+          <h4 class="font-semibold">Cómo invitar</h4>
+          <ol class="list-decimal ml-5 mt-2 text-sm text-gray-600">
+            <li>Comparte tu código único.</li>
+            <li>Tu amigo se registra y usa el código.</li>
+            <li>Ambos reciben Q10 en saldo Zigi.</li>
+          </ol>
+        </div>
+        <div class="p-4 border rounded">
+          <h4 class="font-semibold">Beneficios para negocios</h4>
+          <p class="text-sm text-gray-600 mt-2">Los comercios pueden ofrecer códigos exclusivos y aparecer en la app como aliados.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="mt-10">
+      <h2 class="text-2xl font-semibold">Lo que dicen los usuarios</h2>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <blockquote class="p-4 bg-white rounded shadow">"Zigi me salvó cuando llegaba tarde — servicio rápido y seguro." <div class="mt-2 font-semibold">— Ana M.</div></blockquote>
+        <blockquote class="p-4 bg-white rounded shadow">"Puedo pedir comida y pagar con la app. Muy práctica." <div class="mt-2 font-semibold">— Carlos R.</div></blockquote>
+        <blockquote class="p-4 bg-white rounded shadow">"El sistema de referidos me permitió ganar crédito fácil." <div class="mt-2 font-semibold">— Rosa P.</div></blockquote>
+      </div>
+    </section>
+
+    <!-- FAQ & Contact -->
+    <section id="contact" class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="font-semibold">Preguntas frecuentes</h3>
+        <details class="mt-3"><summary class="cursor-pointer">¿Cómo reclamo mi crédito de bienvenida?</summary><p class="mt-2 text-sm text-gray-600">Al registrarte, ingresa el código promocional en la sección 'Promociones'. El crédito se añadirá automáticamente a tu saldo.</p></details>
+        <details class="mt-3"><summary class="cursor-pointer">¿Qué métodos de pago aceptan?</summary><p class="mt-2 text-sm text-gray-600">Tarjeta de crédito/débito y pagos en efectivo en algunos servicios. Próximamente: pagos QR y billeteras.</p></details>
+      </div>
+      <div class="bg-white p-6 rounded shadow">
+        <h3 class="font-semibold">Contacto</h3>
+        <p class="text-sm text-gray-600 mt-2">Soporte: soporte@zigi.app — Tel: +502 1234 5678</p>
+        <form id="contactForm" class="mt-4 flex flex-col gap-3">
+          <input type="text" id="cname" placeholder="Tu nombre" class="px-3 py-2 border rounded" />
+          <input type="email" id="cemail" placeholder="Correo" class="px-3 py-2 border rounded" />
+          <textarea id="cmsg" placeholder="Mensaje" class="px-3 py-2 border rounded"></textarea>
+          <button type="button" id="cSend" class="bg-gray-800 text-white px-4 py-2 rounded">Enviar mensaje</button>
+        </form>
+        <div id="cMsg" class="mt-2 text-sm text-green-600 hidden">Mensaje enviado. Te responderemos pronto.</div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-12 text-sm text-gray-500">
+      <div class="max-w-6xl mx-auto px-6 py-6 border-t flex flex-col md:flex-row items-center justify-between">
+        <div>© <strong>Zigi</strong> 2025 — Todos los derechos reservados</div>
+        <div class="flex gap-4 mt-3 md:mt-0">
+          <a href="#">Política de privacidad</a>
+          <a href="#">Términos</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // Mobile menu
+    const menuBtn = document.getElementById('menuBtn');
+    menuBtn.addEventListener('click', ()=> alert('Abrir menú (implementar)'));
+
+    // Lead form
+    const leadForm = document.getElementById('leadForm');
+    const leadMsg = document.getElementById('leadMsg');
+    leadForm.addEventListener('submit', (e)=>{
+      e.preventDefault();
+      // Aquí enviarías a tu backend o a Mailchimp / Google Sheets
+      leadMsg.classList.remove('hidden');
+      setTimeout(()=> leadMsg.classList.add('hidden'), 6000);
+    });
+
+    // Contact
+    document.getElementById('cSend').addEventListener('click', ()=>{
+      document.getElementById('cMsg').classList.remove('hidden');
+      setTimeout(()=> document.getElementById('cMsg').classList.add('hidden'), 5000);
+    });
+  </script>
+</body>
+</html>
